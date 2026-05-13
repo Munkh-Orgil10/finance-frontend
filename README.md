@@ -1,16 +1,31 @@
-# React + Vite
+# Finance Dashboard - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React frontend for the Personal Finance Dashboard.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React 18
+- Vite
+- Axios
+- Recharts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Related Repository
+- Backend: https://github.com/Munkh-Orgil10/finance-backend
 
-## React Compiler
+## How to Run
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Make sure the backend is running first, then:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+App runs on http://localhost:5173
+
+## Features
+- Balance, income and expense summary cards
+- Spending breakdown pie chart by category
+- Filter transactions by category
+- Add income and expense transactions
+- Delete transactions
+- Live updates after every change
